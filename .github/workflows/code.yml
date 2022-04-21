@@ -1,0 +1,32 @@
+name: Shell Commands
+on: [push]
+
+jobs:
+
+  run-Shell-Command1:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Print a String
+
+         run: |
+
+            echo "Hey hello this is my project"
+
+            echo "This project shows the version of node and npm"
+
+  run-Shell-Commands:
+
+     runs-on: ubuntu-latest
+
+    steps:
+
+       - name: Give the version of the node and npm
+
+         run: |
+
+          node -v
+
+          npm -v
